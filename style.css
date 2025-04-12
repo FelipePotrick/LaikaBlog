@@ -59,11 +59,27 @@ a {
   color: var(--cor-menu);
   font-size: 30px;
   font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .menu-info ul {
   display: flex;
   flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .menu-info a {
@@ -88,10 +104,26 @@ a {
   margin-top: 60px;
   padding: 50px;
   flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .sobre-img {
   margin-left: 20px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .sobre-info p {
@@ -223,4 +255,15 @@ a {
 
 #laika2 {
   margin-top: 150px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  background-color: var(--cor-primaria);
+  padding: 20px;
 }
